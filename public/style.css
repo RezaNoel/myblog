@@ -1,0 +1,254 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+
+  background-color: #f5f5f5;
+  margin-bottom: 110px;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header a{
+
+}
+h1 {
+  /*font-size: 1.5rem;*/
+  margin: 0;
+  color: #333;
+}
+
+.operations {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*button {*/
+/*  background-color: transparent;*/
+/*  border: none;*/
+/*  padding: 0.5rem 0.7rem;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  transition: all 0.2s ease-in-out;*/
+/*}*/
+
+.delete {
+  background-color: #fdc1af;
+    border-color: #c9302c;
+    color: 		#000;
+
+}
+
+.delete:hover {
+  background-color: #ff967b;
+    color: #fff;
+}
+
+.sprints {
+
+    background-color: #3c5d74;
+    border-color: #1976d2;
+    color: #fff;
+}
+
+.sprints:hover {
+  background-color: #104163;
+    color: #fff;
+}
+
+.details {
+  background-color: #c5d0bb;
+    border-color: #1976d2;
+    color: #000;
+}
+
+.details:hover {
+  background-color: #879a86;
+     color: #fff;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Textarea */
+textarea {
+    height: 150px; /* Adjust height as needed */
+    resize: vertical; /* Allow resizing */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.neumorphic-btn {
+    text-decoration: none;
+    text-align: center;
+    border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -2px 6px rgba(255, 255, 255, 0.7); /* Inner and outer shadows */
+  transition: all 0.2s ease-in-out;
+
+}
+
+.neumorphic-btn:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 -4px 8px rgba(255, 255, 255, 0.7); /* Increase shadows on hover */
+}
+
+
+
+
+/* Project Cards */
+.project-cards {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  justify-items: stretch ;
+  gap: 3%;
+  height: 100%;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  /*width: ;*/
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack info and actions vertically */
+  justify-content: space-between;
+}
+/* Project Card Header */
+.project-card-header {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-card-header h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-dates {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* Project Card Details */
+.project-card-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Stack info and actions vertically */
+  justify-content: space-between;
+
+}
+
+.project-card-info {
+  margin-bottom: 1rem; /* Add some space between info and actions */
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.project-card-info li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.project-card-description {
+  padding: 1rem;
+  font-size: 0.9rem; /* Adjust font size as needed */
+
+}
+
+.my-footer {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-block: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.28);
+  justify-content: center ;
+}
+.homepage{
+display: flex;
+  justify-content: center ;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-family:IRANYekan;
+  fill:  #202020;
+}
+.homepage a {
+  text-decoration: none;
+  color: #202020;
+}
+@media screen and (max-width: 768px) {
+  .project-cards {
+  grid-template-columns: auto ;
+}
+  .neumorphic-btn {
+
+  padding: 10px 15px;
+
+
+}
+   .my-footer{
+     display: flex;
+   }
+}
+
+
